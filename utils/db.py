@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 __author__ = 'Michael Liao'
@@ -13,7 +13,6 @@ import functools
 import threading
 import logging
 
-# Dict object:
 
 class Dict(dict):
     """
@@ -161,7 +160,8 @@ def create_engine(user, password, database, host='127.0.0.1', port=3306, **kw):
 
     global engine
     if engine is not None:
-        raise DBError('Engine is already initialized.')
+        return
+        # raise DBError('Engine is already initialized.')
     params = dict(user=user, password=password, database=database, host=host,
                   port=port)
     defaults = dict(use_unicode=True, charset='utf8',
@@ -247,8 +247,7 @@ class _TransactionCtx(object):
             self.should_close_conn = True
         _db_ctx.transactions += 1
         logging.info(
-            'begin transaction...' if _db_ctx.transactions == 1 else 'join '
-                                                                     'current transaction...')
+            'begin transaction...' if _db_ctx.transactions == 1 else 'join current transaction...')
         return self
 
     def __exit__(self, exctype, excvalue, traceback):
@@ -291,8 +290,7 @@ def transaction():
         pass
 
     >>> def update_profile(id, name, rollback):
-    ...     u = dict(id=id, name=name, email='%s@test.org' % name,
-    passwd=name, last_modified=time.time())
+    ...     u = dict(id=id, name=name, email='%s@test.org' % name, passwd=name, last_modified=time.time())
     ...     insert('user', **u)
     ...     r = update('update user set passwd=? where id=?', name.upper(), id)
     ...     if rollback:
@@ -318,8 +316,7 @@ def with_transaction(func):
 
     >>> @with_transaction
     ... def update_profile(id, name, rollback):
-    ...     u = dict(id=id, name=name, email='%s@test.org' % name,
-    passwd=name, last_modified=time.time())
+    ...     u = dict(id=id, name=name, email='%s@test.org' % name, passwd=name, last_modified=time.time())
     ...     insert('user', **u)
     ...     r = update('update user set passwd=? where id=?', name.upper(), id)
     ...     if rollback:
@@ -374,10 +371,8 @@ def select_one(sql, *args):
     If no result found, return None.
     If multiple results found, the first one returned.
 
-    >>> u1 = dict(id=100, name='Alice', email='alice@test.org',
-    passwd='ABC-12345', last_modified=time.time())
-    >>> u2 = dict(id=101, name='Sarah', email='sarah@test.org',
-    passwd='ABC-12345', last_modified=time.time())
+    >>> u1 = dict(id=100, name='Alice', email='alice@test.org', passwd='ABC-12345', last_modified=time.time())
+    >>> u2 = dict(id=101, name='Sarah', email='sarah@test.org', passwd='ABC-12345', last_modified=time.time())
     >>> insert('user', **u1)
     1
     >>> insert('user', **u2)
@@ -386,8 +381,7 @@ def select_one(sql, *args):
     >>> u.name
     'Alice'
     >>> select_one('select * from user where email=?', 'abc@email.com')
-    >>> u2 = select_one('select * from user where passwd=? order by email',
-    'ABC-12345')
+    >>> u2 = select_one('select * from user where passwd=? order by email', 'ABC-12345')
     >>> u2.name
     'Alice'
     """
@@ -400,10 +394,8 @@ def select_int(sql, *args):
     Execute select SQL and expected one int and only one int result. 
 
     >>> n = update('delete from user')
-    >>> u1 = dict(id=96900, name='Ada', email='ada@test.org',
-    passwd='A-12345', last_modified=time.time())
-    >>> u2 = dict(id=96901, name='Adam', email='adam@test.org',
-    passwd='A-12345', last_modified=time.time())
+    >>> u1 = dict(id=96900, name='Ada', email='ada@test.org', passwd='A-12345', last_modified=time.time())
+    >>> u2 = dict(id=96901, name='Adam', email='adam@test.org', passwd='A-12345', last_modified=time.time())
     >>> insert('user', **u1)
     1
     >>> insert('user', **u2)
@@ -412,8 +404,7 @@ def select_int(sql, *args):
     2
     >>> select_int('select count(*) from user where email=?', 'ada@test.org')
     1
-    >>> select_int('select count(*) from user where email=?',
-    'notexist@test.org')
+    >>> select_int('select count(*) from user where email=?', 'notexist@test.org')
     0
     >>> select_int('select id from user where email=?', 'ada@test.org')
     96900
@@ -433,10 +424,8 @@ def select(sql, *args):
     """
     Execute select SQL and return list or empty list if no result.
 
-    >>> u1 = dict(id=200, name='Wall.E', email='wall.e@test.org',
-    passwd='back-to-earth', last_modified=time.time())
-    >>> u2 = dict(id=201, name='Eva', email='eva@test.org',
-    passwd='back-to-earth', last_modified=time.time())
+    >>> u1 = dict(id=200, name='Wall.E', email='wall.e@test.org', passwd='back-to-earth', last_modified=time.time())
+    >>> u2 = dict(id=201, name='Eva', email='eva@test.org', passwd='back-to-earth', last_modified=time.time())
     >>> insert('user', **u1)
     1
     >>> insert('user', **u2)
@@ -447,8 +436,7 @@ def select(sql, *args):
     >>> L = select('select * from user where id=?', 200)
     >>> L[0].email
     'wall.e@test.org'
-    >>> L = select('select * from user where passwd=? order by id desc',
-    'back-to-earth')
+    >>> L = select('select * from user where passwd=? order by id desc', 'back-to-earth')
     >>> L[0].name
     'Eva'
     >>> L[1].name
@@ -481,8 +469,7 @@ def insert(table, **kw):
     """
     Execute insert SQL.
 
-    >>> u1 = dict(id=2000, name='Bob', email='bob@test.org',
-    passwd='bobobob', last_modified=time.time())
+    >>> u1 = dict(id=2000, name='Bob', email='bob@test.org', passwd='bobobob', last_modified=time.time())
     >>> insert('user', **u1)
     1
     >>> u2 = select_one('select * from user where id=?', 2000)
@@ -491,8 +478,7 @@ def insert(table, **kw):
     >>> insert('user', **u2)
     Traceback (most recent call last):
       ...
-    mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry
-    '2000' for key 'PRIMARY'
+    mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '2000' for key 'PRIMARY'
     """
     cols, args = zip(*kw.items())
     sql = 'insert into `%s` (%s) values (%s)' % (
@@ -505,8 +491,7 @@ def update(sql, *args):
     r"""
     Execute update SQL.
 
-    >>> u1 = dict(id=1000, name='Michael', email='michael@test.org',
-    passwd='123456', last_modified=time.time())
+    >>> u1 = dict(id=1000, name='Michael', email='michael@test.org', passwd='123456', last_modified=time.time())
     >>> insert('user', **u1)
     1
     >>> u2 = select_one('select * from user where id=?', 1000)
@@ -514,16 +499,14 @@ def update(sql, *args):
     'michael@test.org'
     >>> u2.passwd
     '123456'
-    >>> update('update user set email=?, passwd=? where id=?',
-    'michael@example.org', '654321', 1000)
+    >>> update('update user set email=?, passwd=? where id=?', 'michael@example.org', '654321', 1000)
     1
     >>> u3 = select_one('select * from user where id=?', 1000)
     >>> u3.email
     'michael@example.org'
     >>> u3.passwd
     '654321'
-    >>> update('update user set passwd=? where id=?', '***', '123\' or
-    id=\'456')
+    >>> update('update user set passwd=? where id=?', '***', '123\' or id=\'456')
     0
     """
     return _update(sql, *args)
@@ -534,8 +517,7 @@ if __name__ == '__main__':
     create_engine('root', '', 'test')
     update('drop table if exists user')
     update(
-        'create table user (id int primary key, name text, email text, '
-        'passwd text, last_modified real)')
-    import doctest
+        'create table user (id int primary key, name text, email text, passwd text, last_modified real)')
 
+    import doctest
     doctest.testmod()

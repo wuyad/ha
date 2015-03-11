@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'wuyad'
+__author__ = 'wuyadong'
 
 import logging
 import logging.config

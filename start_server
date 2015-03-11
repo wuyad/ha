@@ -1,0 +1,3 @@
+#!/bin/sh
+
+python3 -m haoss.hss_server

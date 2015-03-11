@@ -1,5 +1,6 @@
 # .idea project temp file
 .idea/workspace.xml
+haoss.log*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

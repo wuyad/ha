@@ -5,7 +5,6 @@
 Database operation module. This module is independent with web module.
 """
 
-import operator
 import time
 
 from utils import db
@@ -145,23 +144,23 @@ class ModelMetaclass(type):
         else:
             log.warning('Redefine class: %s' % name)
 
-        log.info('Scan ORMapping %s...' % name)
+        log.debug('Scan ORMapping %s...' % name)
         mappings = dict()
         primary_key = None
         for k, v in attrs.items():
             if isinstance(v, Field):
                 if not v.name:
                     v.name = k
-                log.info('Found mapping: %s => %s' % (k, v))
+                log.debug('Found mapping: %s => %s' % (k, v))
                 # check duplicate primary key:
                 if v.primary_key:
                     if primary_key:
                         raise TypeError('Cannot define more than 1 primary key in class: %s' % name)
                     if v.updatable:
-                        log.warning('NOTE: change primary key to non-updatable.')
+                        log.debug('NOTE: change primary key to non-updatable.')
                         v.updatable = False
                     if v.nullable:
-                        log.warning('NOTE: change primary key to non-nullable.')
+                        log.debug('NOTE: change primary key to non-nullable.')
                         v.nullable = False
                     primary_key = v
                 mappings[k] = v

@@ -8,29 +8,27 @@ from utils.orm import *
 
 __author__ = 'wuyadong'
 
+class User(Model):
+    id = IntegerField(primary_key=True)
+    name = StringField()
+    email = StringField(updatable=False)
+    passwd = StringField(default=lambda: '******')
+    last_modified = FloatField()
+
+    def pre_insert(self):
+        self.last_modified = time.time()
 
 class TestOrm(unittest.TestCase):
+
     def setUp(self):
         db.create_engine('root', '', 'test')
         db.update('drop table if exists user')
-        db.update(
-            'create table user (id int primary key, name text, '
-            'email text, passwd text, last_modified real)')
+        db.update(User().__sql__())
 
     def tearDown(self):
         pass
 
     def test_orm(self):
-        class User(Model):
-            id = IntegerField(primary_key=True)
-            name = StringField()
-            email = StringField(updatable=False)
-            passwd = StringField(default=lambda: '******')
-            last_modified = FloatField()
-
-            def pre_insert(self):
-                self.last_modified = time.time()
-
         u = User(id=10190, name='Michael', email='orm@db.org')
         r = u.insert()
         self.assertEqual(u.email, 'orm@db.org')
@@ -48,7 +46,7 @@ class TestOrm(unittest.TestCase):
         self.assertEqual(len(db.select('select * from user where id=10190')),
                          0)
 
-        print(User().__sql__())
+        log.info(User().__sql__())
         '''-- generating SQL for user:
         create table user (
         id bigint not null,

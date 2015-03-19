@@ -16,7 +16,6 @@ __author__ = 'wuyadong'
 
 def start_ha_server():
     conf = configparser.ConfigParser()
-    global config_file
     conf.read(config_file)
     port = conf.getint('ha_server', 'port')
     log.info('HAOSS server started with port {}.'.format(port))
@@ -52,7 +51,6 @@ class ha_hangler(socketserver.StreamRequestHandler):
             if action == b'':
                 log.info('Closed by peer')
                 return
-            global pkg_def
             act = action.decode()
             try:
                 fmt, caller = pkg_def[act]
@@ -95,7 +93,6 @@ class ha_hangler(socketserver.StreamRequestHandler):
         self.do_register_response(res)
 
     def do_register_response(self, res):
-        global pkg_def
         fmt, _ = pkg_def['RPRE']
         n = self.request.send(b'RPRE', 4)
         assert n == 4, 'RPRE header send failed.'
@@ -122,7 +119,6 @@ class ha_hangler(socketserver.StreamRequestHandler):
         self.do_logout_response(res)
 
     def do_logout_response(self, status):
-        global pkg_def
         fmt, _ = pkg_def['RPLO']
         n = self.request.send(b'RPLO', 4)
         assert n == 4, 'RPLO header send failed.'

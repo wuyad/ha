@@ -5,8 +5,8 @@ import unittest
 
 from utils.orm import *
 
-
 __author__ = 'wuyadong'
+
 
 class User(Model):
     id = IntegerField(primary_key=True)
@@ -17,6 +17,7 @@ class User(Model):
 
     def pre_insert(self):
         self.last_modified = time.time()
+
 
 class TestOrm(unittest.TestCase):
 

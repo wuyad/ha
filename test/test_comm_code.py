@@ -10,7 +10,7 @@ from utils.log import log
 __author__ = 'wuyadong'
 
 
-class Test_Comm_Code(unittest.TestCase):
+class TestCommCode(unittest.TestCase):
     def test_comm_code(self):
         # for i in range(10):
         #     mac = comm_code.randomMAC()

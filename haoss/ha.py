@@ -72,7 +72,8 @@ class ApClient:
                 b'52:54:01:68:e8:6c',
                 b'52:54:01:6a:a3:1c']
         from random import randint
-        self.mac = macs[randint(0,len(macs))]
+
+        self.mac = macs[randint(0, len(macs))]
         # self.mac = b'52:54:01:0d:3f:19'  # for test, no auth
         self.comm_code = ''
 

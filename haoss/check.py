@@ -3,8 +3,6 @@
 
 from configparser import ConfigParser
 
-from utils.log import log
-from utils import db
 from haoss.global_def import *
 from haoss.entity import *
 
@@ -17,16 +15,19 @@ def table_exists(table_name):
     n = db.select_int(sql)
     return n >= 1
 
+
 def check_db():
     db.create_engine('root', '', 'test')
-    tables = [('user','User'), ('apinfo', 'APInfo'), ('authap', 'AuthAP')]
+    tables = [('user', 'User'), ('apinfo', 'APInfo'), ('authap', 'AuthAP')]
+
     def check_or_create():
         for t in tables:
             if not table_exists(t[0]):
                 log.error('table <{}> not exist, begin create it'.format(t[0]))
-                n = db.update(eval(t[1]+'().__sql__()'))
+                n = db.update(eval(t[1] + '().__sql__()'))
                 if n == 1:
                     log.info('table <{}> create.'.format(t[0]))
+
     check_or_create()
     # AuthAP(mac='52:54:00:16:85:54').insert()
     # AuthAP(mac='52:54:00:68:e8:6c').insert()
@@ -40,15 +41,16 @@ def check_db():
     # AuthAP(mac='52:54:00:59:d1:54').insert()
     return True
 
+
 def check_conf():
     conf = ConfigParser()
-    global config_file
     if conf.read(config_file):
         if conf.get('ha_server', 'port'):
             log.info('config file read successed')
             return True
     log.error('config file read failed')
     return False
+
 
 def check_all():
     return check_db() and check_conf()

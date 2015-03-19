@@ -4,7 +4,6 @@
 
 __author__ = 'wuyadong'
 
-
 config_file = 'haoss.conf'
 pkg_def = {
     'REGI': ('!17s', 'do_register'),

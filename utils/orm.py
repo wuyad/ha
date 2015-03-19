@@ -52,14 +52,44 @@ class StringField(Field):
         super(StringField, self).__init__(**kw)
 
 
+class TinyIntegerField(Field):
+
+    def __init__(self, **kw):
+        if not 'default' in kw:
+            kw['default'] = 0
+        if not 'ddl' in kw:
+            kw['ddl'] = 'tinyint'
+        super(TinyIntegerField, self).__init__(**kw)
+
+
+class SmallIntegerField(Field):
+
+        def __init__(self, **kw):
+            if not 'default' in kw:
+                kw['default'] = 0
+            if not 'ddl' in kw:
+                kw['ddl'] = 'smallint'
+            super(SmallIntegerField, self).__init__(**kw)
+
+
 class IntegerField(Field):
 
     def __init__(self, **kw):
         if not 'default' in kw:
             kw['default'] = 0
         if not 'ddl' in kw:
-            kw['ddl'] = 'bigint'
+            kw['ddl'] = 'int'
         super(IntegerField, self).__init__(**kw)
+
+
+class BigIntegerField(Field):
+
+    def __init__(self, **kw):
+        if not 'default' in kw:
+            kw['default'] = 0
+        if not 'ddl' in kw:
+            kw['ddl'] = 'bigint'
+        super(BigIntegerField, self).__init__(**kw)
 
 
 class FloatField(Field):

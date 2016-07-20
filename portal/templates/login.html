@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="uk-height-1-1">
+<head>
+    <meta charset="utf-8"/>
+    <title>登录 - Hot AP OSS</title>
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/static/css/uikit.min.css">
+    <link rel="stylesheet" href="/static/css/uikit.gradient.min.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/md5.js"></script>
+    <script src="/static/js/uikit.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/awesome.js"></script>
+    <script>
+
+        $(function () {
+            var vm = new Vue({
+                el: '#form-signin',
+                data: {
+                    uname: '',
+                    password: '',
+                    noname: true
+                },
+                methods: {
+                    submit: function (event) {
+                        event.preventDefault();
+                        var uname = this.uname.trim().toLowerCase();
+                        showError();
+                        startLoading();
+                        postApi('/', {
+                            uname: this.uname,
+                            password: this.password,
+                            noname: this.noname
+                        }, function (err, result) {
+                            if (err) {
+                                showError(err);
+                            }
+                            else {
+                                return location.assign('/');
+                            }
+                            stopLoading();
+                        });
+                    }
+                }
+            });
+        })
+
+    </script>
+</head>
+<body class="uk-height-1-1">
+<DIV id=imgAd style="Z-INDEX: 100; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px;
+visibility: visible;"><a href="{{ url }}" target="_blank">
+    <img src="https://www.baidu.com/img/bdlogo.png" width="80" height="80" border="0"></a></DIV>
+<SCRIPT src="/static/js/ad.js"></SCRIPT>
+<div class="uk-vertical-align uk-text-center uk-height-1-1">
+    <div class="uk-vertical-align-middle" style="width: 320px">
+        <p><a href="/" class="uk-icon-button"><i class="uk-icon-html5"></i></a> 登录</p>
+
+        <form id="form-signin" action="/redirect/" method="post" class="uk-panel uk-panel-box uk-form">
+            <div class="uk-alert uk-alert-danger uk-hidden"></div>
+            <div class="uk-form-row">
+                <div class="uk-form-icon uk-width-1-1">
+                    <i class="uk-icon-envelope-o"></i>
+                    <input v-model="uname" name="uname" type="text" placeholder="用户名" maxlength="50"
+                           class="uk-width-1-1 uk-form-large">
+                </div>
+            </div>
+            <div class="uk-form-row">
+                <div class="uk-form-icon uk-width-1-1">
+                    <i class="uk-icon-lock"></i>
+                    <input v-model="password" name="password" type="password" placeholder="密码" maxlength="50"
+                           class="uk-width-1-1 uk-form-large">
+                    <input name="gw_id" type="hidden" value="{{ gw_id }}">
+                </div>
+            </div>
+            <div class="uk-form-row uk-text-small">
+                <label class="uk-float-left"><input v-model="noname" type="checkbox" name="noname" checked> 匿名上线</label>
+            </div>
+            <div class="uk-form-row">
+                <button type="submit" class="uk-width-1-1 uk-button uk-button-primary uk-button-large"><i
+                        class="uk-icon-sign-in"></i> 登录
+                </button>
+                <p></p>
+                <button type="button" class="uk-width-1-1 uk-button uk-button-primary uk-button-large"><i
+                        class="uk-icon-edit"></i> 注册
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

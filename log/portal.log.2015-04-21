@@ -1,0 +1,793 @@
+2015-04-21 09:13:57 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 09:13:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 09:13:57 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 09:14:55 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 09:14:55 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 09:14:55 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 09:15:47 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 09:15:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 09:15:47 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 11:09:11 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 11:09:11 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 11:09:11 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 11:09:22 web.py     [line:1583] ERROR    Expect return a dict when using @view() decorator.
+Traceback (most recent call last):
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1566, in wsgi
+    r = fn_exec()
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1542, in fn_route
+    return fn()
+  File "/Users/wuyadong/src/ha/utils/web.py", line 587, in __call__
+    return self.func(*args)
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1338, in _wrapper
+    raise ValueError('Expect return a dict when using @view() decorator.')
+ValueError: Expect return a dict when using @view() decorator.
+2015-04-21 11:09:41 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 11:09:41 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 11:09:41 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 11:09:44 web.py     [line:1336] INFO     return Template
+2015-04-21 11:09:44 web.py     [line:1583] ERROR    Encountered unknown tag 'uname'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+Traceback (most recent call last):
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1568, in wsgi
+    r = self._template_engine(r.template_name, r.model)
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1293, in __call__
+    return self._env.get_template(path).render(**model).encode('utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/environment.py", line 554, in compile
+    self.handle_exception(exc_info, source_hint=source)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wuyadong/src/ha/portal/templates/hello.html", line 15, in template
+    Hello {% uname %} !!!
+TemplateSyntaxError: Encountered unknown tag 'uname'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2015-04-21 11:12:21 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 11:12:21 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 11:12:21 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 11:12:25 web.py     [line:1336] INFO     return Template
+2015-04-21 11:16:44 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 11:16:44 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 11:16:44 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 11:16:47 web.py     [line:1336] INFO     return Template
+2015-04-21 11:17:49 web.py     [line:1336] INFO     return Template
+2015-04-21 11:20:07 web.py     [line:1336] INFO     return Template
+2015-04-21 11:30:15 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 11:30:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 11:30:15 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 11:30:22 web.py     [line:1336] INFO     return Template
+2015-04-21 11:30:22 web.py     [line:1336] INFO     return Template
+2015-04-21 11:30:22 web.py     [line:1336] INFO     return Template
+2015-04-21 15:16:42 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x103ac4050>),UI>
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:16:42 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:16:42 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:16:42 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:16:42 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:16:42 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:16:42 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:21:49 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x103ac0050>),UI>
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:21:49 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:21:49 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:21:49 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:21:49 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:21:49 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:21:49 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:23:01 db.py      [line:175] DEBUG    Init mysql engine <0x103cb5050> ok.
+2015-04-21 15:23:08 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:23:08 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:23:57 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x103abff50>),UI>
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:23:57 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:23:57 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:23:57 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:23:57 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:23:57 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:23:57 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:24:01 db.py      [line:175] DEBUG    Init mysql engine <0x103cb4090> ok.
+2015-04-21 15:24:10 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:24:10 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:27:03 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102268140>),UI>
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:27:03 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:27:03 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:27:03 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:03 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:27:03 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:27:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:27:03 db.py      [line:175] DEBUG    Init mysql engine <0x1026609d0> ok.
+2015-04-21 15:27:03 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:27:03 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:27:23 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:27:23 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:27:23 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:27:23 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:23 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:27:23 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:27:23 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:27:23 db.py      [line:175] DEBUG    Init mysql engine <0x102e609d0> ok.
+2015-04-21 15:27:23 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:27:23 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:27:30 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:27:30 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:27:30 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:27:30 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:30 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:27:30 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:27:30 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:27:30 db.py      [line:175] DEBUG    Init mysql engine <0x102e609d0> ok.
+2015-04-21 15:27:30 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:27:30 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:27:30 entity.py  [line:64 ] ERROR    db check error with error {}
+2015-04-21 15:27:50 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x101a68140>),UI>
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:27:50 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:27:50 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:27:50 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:50 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:27:50 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:27:50 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:27:50 db.py      [line:175] DEBUG    Init mysql engine <0x101e619d0> ok.
+2015-04-21 15:27:50 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:27:50 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:27:50 entity.py  [line:64 ] ERROR    db check error with error {}
+2015-04-21 15:27:56 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x10224c140>),UI>
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:27:56 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:27:56 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:27:56 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:27:56 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:27:56 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:27:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:27:56 db.py      [line:175] DEBUG    Init mysql engine <0x1026609d0> ok.
+2015-04-21 15:27:56 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:27:56 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:27:56 entity.py  [line:64 ] ERROR    db check error with error {}
+2015-04-21 15:28:15 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:28:15 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:28:15 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:28:15 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:28:15 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:28:15 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:28:15 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:28:15 db.py      [line:175] DEBUG    Init mysql engine <0x102e5e9d0> ok.
+2015-04-21 15:28:15 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:28:15 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:28:15 entity.py  [line:64 ] ERROR    db check error with error {1049 (42000): Unknown database 'portal'}
+2015-04-21 15:28:56 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:28:56 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:28:56 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:28:56 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:28:56 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:28:56 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:28:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:28:56 db.py      [line:175] DEBUG    Init mysql engine <0x102e5e9d0> ok.
+2015-04-21 15:28:56 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:28:56 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:28:56 entity.py  [line:64 ] ERROR    db check error with error {1049 (42000): Unknown database 'portal'}
+2015-04-21 15:29:28 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:29:28 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:29:28 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:29:28 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:29:28 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:29:28 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:29:28 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:29:28 db.py      [line:175] DEBUG    Init mysql engine <0x102e5e9d0> ok.
+2015-04-21 15:29:28 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:29:28 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:29:28 db.py      [line:98 ] DEBUG    open connection <0x102f35390>...
+2015-04-21 15:29:28 db.py      [line:112] DEBUG    close connection <0x102f35390>...
+2015-04-21 15:29:28 entity.py  [line:53 ] ERROR    table <user> not exist, begin create it
+2015-04-21 15:29:28 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:29:28 db.py      [line:453] DEBUG    SQL: -- generating SQL for user:
+create table user (
+  id int not null,
+  name varchar(255) not null,
+  email varchar(255) not null,
+  passwd varchar(255) not null,
+  last_modified real not null,
+  primary key(id)
+);, ARGS: ()
+2015-04-21 15:29:28 db.py      [line:98 ] DEBUG    open connection <0x102f35390>...
+2015-04-21 15:29:28 db.py      [line:460] DEBUG    auto commit
+2015-04-21 15:29:28 db.py      [line:112] DEBUG    close connection <0x102f35390>...
+2015-04-21 15:29:28 entity.py  [line:56 ] INFO     table <user> created.
+2015-04-21 15:29:28 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:29:28 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 15:29:28 db.py      [line:98 ] DEBUG    open connection <0x102f35390>...
+2015-04-21 15:29:28 db.py      [line:112] DEBUG    close connection <0x102f35390>...
+2015-04-21 15:29:28 entity.py  [line:53 ] ERROR    table <apadv> not exist, begin create it
+2015-04-21 15:29:28 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:29:28 db.py      [line:453] DEBUG    SQL: -- generating SQL for apadv:
+create table apadv (
+  ap_mac varchar(19) not null,
+  comm_code varchar(42) not null,
+  url varchar(100) not null,
+  primary key(ap_mac)
+);, ARGS: ()
+2015-04-21 15:29:28 db.py      [line:98 ] DEBUG    open connection <0x102f35390>...
+2015-04-21 15:29:28 db.py      [line:460] DEBUG    auto commit
+2015-04-21 15:29:28 db.py      [line:112] DEBUG    close connection <0x102f35390>...
+2015-04-21 15:29:28 entity.py  [line:56 ] INFO     table <apadv> created.
+2015-04-21 15:29:28 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 15:57:31 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 15:57:31 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 15:57:31 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 15:57:31 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 15:57:31 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 15:57:31 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 15:57:31 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 15:57:31 db.py      [line:175] DEBUG    Init mysql engine <0x102e5e950> ok.
+2015-04-21 15:57:31 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:57:31 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 15:57:31 db.py      [line:98 ] DEBUG    open connection <0x102f35310>...
+2015-04-21 15:57:31 db.py      [line:112] DEBUG    close connection <0x102f35310>...
+2015-04-21 15:57:31 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 15:57:31 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 15:57:31 db.py      [line:98 ] DEBUG    open connection <0x102f35310>...
+2015-04-21 15:57:31 db.py      [line:112] DEBUG    close connection <0x102f35310>...
+2015-04-21 15:57:31 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 15:57:44 web.py     [line:1583] ERROR    unhashable type
+Traceback (most recent call last):
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1566, in wsgi
+    r = fn_exec()
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1542, in fn_route
+    return fn()
+  File "/Users/wuyadong/src/ha/utils/web.py", line 587, in __call__
+    return self.func(*args)
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1334, in _wrapper
+    r = func(*args, **kw)
+  File "/Users/wuyadong/src/ha/portal/urls.py", line 36, in index
+    heads = ctx.request.headers[:]
+TypeError: unhashable type
+2015-04-21 16:03:07 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x10224c140>),UI>
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:03:07 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:03:07 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:03:07 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:03:07 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:03:07 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:03:07 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:03:07 db.py      [line:175] DEBUG    Init mysql engine <0x10265e950> ok.
+2015-04-21 16:03:07 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:03:07 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:03:07 db.py      [line:98 ] DEBUG    open connection <0x102735310>...
+2015-04-21 16:03:07 db.py      [line:112] DEBUG    close connection <0x102735310>...
+2015-04-21 16:03:07 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:03:07 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:03:07 db.py      [line:98 ] DEBUG    open connection <0x102735310>...
+2015-04-21 16:03:07 db.py      [line:112] DEBUG    close connection <0x102735310>...
+2015-04-21 16:03:07 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:03:11 web.py     [line:1336] INFO     return Template
+2015-04-21 16:03:11 web.py     [line:1583] ERROR    'dict object' has no attribute 'iterms'
+Traceback (most recent call last):
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1568, in wsgi
+    r = self._template_engine(r.template_name, r.model)
+  File "/Users/wuyadong/src/ha/utils/web.py", line 1293, in __call__
+    return self._env.get_template(path).render(**model).encode('utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Jinja2-2.7.3-py2.7.egg/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wuyadong/src/ha/portal/templates/index.html", line 1, in top-level template code
+    {% extends '__base__.html' %}
+  File "/Users/wuyadong/src/ha/portal/templates/__base__.html", line 53, in top-level template code
+    {% block content %}
+  File "/Users/wuyadong/src/ha/portal/templates/index.html", line 15, in block "content"
+    {% for k,v in heads.iterms() %}
+UndefinedError: 'dict object' has no attribute 'iterms'
+2015-04-21 16:03:41 web.py     [line:1336] INFO     return Template
+2015-04-21 16:04:07 web.py     [line:1336] INFO     return Template
+2015-04-21 16:08:47 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x10214c140>),UI>
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:08:47 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:08:47 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:08:47 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:08:47 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:08:47 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:08:47 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:08:47 db.py      [line:175] DEBUG    Init mysql engine <0x102664a10> ok.
+2015-04-21 16:08:47 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:08:47 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:08:47 db.py      [line:98 ] DEBUG    open connection <0x1027393d0>...
+2015-04-21 16:08:47 db.py      [line:112] DEBUG    close connection <0x1027393d0>...
+2015-04-21 16:08:47 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:08:47 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:08:47 db.py      [line:98 ] DEBUG    open connection <0x1027393d0>...
+2015-04-21 16:08:47 db.py      [line:112] DEBUG    close connection <0x1027393d0>...
+2015-04-21 16:08:47 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:08:53 web.py     [line:1336] INFO     return Template
+2015-04-21 16:09:05 web.py     [line:1336] INFO     return Template
+2015-04-21 16:09:08 web.py     [line:1336] INFO     return Template
+2015-04-21 16:10:17 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x101a68140>),UI>
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:10:17 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:10:17 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:10:17 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:10:17 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:10:17 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:10:17 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:10:17 db.py      [line:175] DEBUG    Init mysql engine <0x101e63a90> ok.
+2015-04-21 16:10:17 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:10:17 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:10:17 db.py      [line:98 ] DEBUG    open connection <0x101f35450>...
+2015-04-21 16:10:17 db.py      [line:112] DEBUG    close connection <0x101f35450>...
+2015-04-21 16:10:17 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:10:17 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:10:17 db.py      [line:98 ] DEBUG    open connection <0x101f35450>...
+2015-04-21 16:10:17 db.py      [line:112] DEBUG    close connection <0x101f35450>...
+2015-04-21 16:10:17 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:10:20 web.py     [line:1336] INFO     return Template
+2015-04-21 16:10:23 web.py     [line:1336] INFO     return Template
+2015-04-21 16:12:08 web.py     [line:1336] INFO     return Template
+2015-04-21 16:13:23 web.py     [line:1336] INFO     return Template
+2015-04-21 16:15:55 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:15:55 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:15:55 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:15:55 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:15:55 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:15:56 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:15:56 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:15:56 db.py      [line:175] DEBUG    Init mysql engine <0x102e5da10> ok.
+2015-04-21 16:15:56 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:15:56 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:15:56 db.py      [line:98 ] DEBUG    open connection <0x102f353d0>...
+2015-04-21 16:15:56 db.py      [line:112] DEBUG    close connection <0x102f353d0>...
+2015-04-21 16:15:56 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:15:56 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:15:56 db.py      [line:98 ] DEBUG    open connection <0x102f353d0>...
+2015-04-21 16:15:56 db.py      [line:112] DEBUG    close connection <0x102f353d0>...
+2015-04-21 16:15:56 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:29:40 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102a4c140>),UI>
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:29:40 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:29:40 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:29:40 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:29:40 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:29:40 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:29:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:29:40 db.py      [line:175] DEBUG    Init mysql engine <0x102e63a90> ok.
+2015-04-21 16:29:40 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:29:40 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:29:40 db.py      [line:98 ] DEBUG    open connection <0x102f35450>...
+2015-04-21 16:29:40 db.py      [line:112] DEBUG    close connection <0x102f35450>...
+2015-04-21 16:29:40 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:29:40 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:29:40 db.py      [line:98 ] DEBUG    open connection <0x102f35450>...
+2015-04-21 16:29:40 db.py      [line:112] DEBUG    close connection <0x102f35450>...
+2015-04-21 16:29:40 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:29:47 web.py     [line:1336] INFO     return Template
+2015-04-21 16:29:47 web.py     [line:1336] INFO     return Template
+2015-04-21 16:30:06 web.py     [line:1336] INFO     return Template
+2015-04-21 16:30:14 web.py     [line:1336] INFO     return Template
+2015-04-21 16:30:14 web.py     [line:1336] INFO     return Template
+2015-04-21 16:30:48 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x10224c140>),UI>
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:30:48 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:30:48 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:30:48 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:30:48 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:30:48 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:30:48 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:30:48 db.py      [line:175] DEBUG    Init mysql engine <0x102663a90> ok.
+2015-04-21 16:30:48 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:30:48 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:30:48 db.py      [line:98 ] DEBUG    open connection <0x102735450>...
+2015-04-21 16:30:48 db.py      [line:112] DEBUG    close connection <0x102735450>...
+2015-04-21 16:30:48 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:30:48 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:30:48 db.py      [line:98 ] DEBUG    open connection <0x102735450>...
+2015-04-21 16:30:48 db.py      [line:112] DEBUG    close connection <0x102735450>...
+2015-04-21 16:30:48 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:31:14 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102268140>),UI>
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:31:14 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:31:14 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:31:14 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:31:14 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:31:14 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:31:14 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:31:14 db.py      [line:175] DEBUG    Init mysql engine <0x102663a90> ok.
+2015-04-21 16:31:14 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:31:14 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:31:14 db.py      [line:98 ] DEBUG    open connection <0x102735450>...
+2015-04-21 16:31:14 db.py      [line:112] DEBUG    close connection <0x102735450>...
+2015-04-21 16:31:14 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:31:14 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:31:14 db.py      [line:98 ] DEBUG    open connection <0x102735450>...
+2015-04-21 16:31:14 db.py      [line:112] DEBUG    close connection <0x102735450>...
+2015-04-21 16:31:14 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:32:13 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102268140>),UI>
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:32:13 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:32:13 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:32:13 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:32:13 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:32:13 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:32:13 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:32:13 db.py      [line:175] DEBUG    Init mysql engine <0x10265da10> ok.
+2015-04-21 16:32:13 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:32:13 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:32:13 db.py      [line:98 ] DEBUG    open connection <0x1027353d0>...
+2015-04-21 16:32:13 db.py      [line:112] DEBUG    close connection <0x1027353d0>...
+2015-04-21 16:32:13 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:32:13 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:32:13 db.py      [line:98 ] DEBUG    open connection <0x1027353d0>...
+2015-04-21 16:32:13 db.py      [line:112] DEBUG    close connection <0x1027353d0>...
+2015-04-21 16:32:13 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:32:19 web.py     [line:1336] INFO     return Template
+2015-04-21 16:35:03 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x10224c140>),UI>
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:35:03 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:35:03 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:35:03 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:35:03 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:35:03 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:35:03 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:35:03 db.py      [line:175] DEBUG    Init mysql engine <0x102664ad0> ok.
+2015-04-21 16:35:03 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:35:03 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:35:03 db.py      [line:98 ] DEBUG    open connection <0x102735490>...
+2015-04-21 16:35:03 db.py      [line:112] DEBUG    close connection <0x102735490>...
+2015-04-21 16:35:03 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:35:03 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:35:03 db.py      [line:98 ] DEBUG    open connection <0x102735490>...
+2015-04-21 16:35:03 db.py      [line:112] DEBUG    close connection <0x102735490>...
+2015-04-21 16:35:03 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:38:58 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(255),default(),UI>
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(255),default(<function <lambda> at 0x102268140>),UI>
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: id => <IntegerField:id,int,default(0),UI>
+2015-04-21 16:38:58 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(255),default(),I>
+2015-04-21 16:38:58 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: ap_mac => <StringField:ap_mac,varchar(19),default(),UI>
+2015-04-21 16:38:58 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-21 16:38:58 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-21 16:38:58 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-21 16:38:58 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/redirect/)
+2015-04-21 16:38:58 db.py      [line:175] DEBUG    Init mysql engine <0x102664ad0> ok.
+2015-04-21 16:38:58 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:38:58 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-21 16:38:58 db.py      [line:98 ] DEBUG    open connection <0x102735490>...
+2015-04-21 16:38:58 db.py      [line:112] DEBUG    close connection <0x102735490>...
+2015-04-21 16:38:58 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-21 16:38:58 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-21 16:38:58 db.py      [line:98 ] DEBUG    open connection <0x102735490>...
+2015-04-21 16:38:58 db.py      [line:112] DEBUG    close connection <0x102735490>...
+2015-04-21 16:38:58 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-21 16:39:06 web.py     [line:1336] INFO     return Template
+2015-04-21 16:39:07 web.py     [line:1336] INFO     return Template
+2015-04-21 16:39:10 web.py     [line:1336] INFO     return Template
+2015-04-21 16:39:17 web.py     [line:1336] INFO     return Template
+2015-04-21 16:42:42 web.py     [line:1336] INFO     return Template
+2015-04-21 16:46:50 web.py     [line:1336] INFO     return Template

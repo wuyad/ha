@@ -1,0 +1,115 @@
+2015-04-24 22:36:40 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(50),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(50),default(<function <lambda> at 0x10224d1b8>),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(50),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: remark => <StringField:remark,varchar(100),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: ap_address => <StringField:ap_address,varchar(19),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:177] DEBUG    Scan ORMapping GWInfo...
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: gw_address => <StringField:gw_address,varchar(15),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: gw_port => <StringField:gw_port,varchar(10),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: gw_id => <StringField:gw_id,varchar(19),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:36:40 orm.py     [line:177] DEBUG    Scan ORMapping Token...
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: status => <TinyIntegerField:status,tinyint,default(0),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: token => <StringField:token,varchar(42),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: uname => <StringField:uname,varchar(42),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: mac => <StringField:mac,varchar(19),default(),UI>
+2015-04-24 22:36:40 orm.py     [line:184] DEBUG    Found mapping: password => <StringField:password,varchar(42),default(),UI>
+2015-04-24 22:36:40 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/noauth)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal)
+2015-04-24 22:36:40 web.py     [line:1514] INFO     Add route: Route(static,POST,path=/redirect/)
+2015-04-24 22:36:40 db.py      [line:175] DEBUG    Init mysql engine <0x1026681d0> ok.
+2015-04-24 22:36:40 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:36:40 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-24 22:36:40 db.py      [line:98 ] DEBUG    open connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:112] DEBUG    close connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:36:40 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-24 22:36:40 db.py      [line:98 ] DEBUG    open connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:112] DEBUG    close connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:36:40 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='gwinfo', ARGS: ()
+2015-04-24 22:36:40 db.py      [line:98 ] DEBUG    open connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:112] DEBUG    close connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:36:40 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='token', ARGS: ()
+2015-04-24 22:36:40 db.py      [line:98 ] DEBUG    open connection <0x10273ab50>...
+2015-04-24 22:36:40 db.py      [line:112] DEBUG    close connection <0x10273ab50>...
+2015-04-24 22:36:40 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
+2015-04-24 22:36:47 web.py     [line:1336] INFO     return Template
+2015-04-24 22:37:09 orm.py     [line:177] DEBUG    Scan ORMapping User...
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: name => <StringField:name,varchar(50),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: passwd => <StringField:passwd,varchar(50),default(<function <lambda> at 0x102a4d1b8>),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: last_modified => <FloatField:last_modified,real,default(0.0),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: email => <StringField:email,varchar(50),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:177] DEBUG    Scan ORMapping APAdv...
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: url => <StringField:url,varchar(100),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: remark => <StringField:remark,varchar(100),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: ap_address => <StringField:ap_address,varchar(19),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: comm_code => <StringField:comm_code,varchar(42),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:177] DEBUG    Scan ORMapping GWInfo...
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: gw_address => <StringField:gw_address,varchar(15),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: gw_port => <StringField:gw_port,varchar(10),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: gw_id => <StringField:gw_id,varchar(19),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:37:09 orm.py     [line:177] DEBUG    Scan ORMapping Token...
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: status => <TinyIntegerField:status,tinyint,default(0),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: token => <StringField:token,varchar(42),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:190] DEBUG    NOTE: change primary key to non-updatable.
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: uname => <StringField:uname,varchar(42),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: mac => <StringField:mac,varchar(19),default(),UI>
+2015-04-24 22:37:09 orm.py     [line:184] DEBUG    Found mapping: password => <StringField:password,varchar(42),default(),UI>
+2015-04-24 22:37:09 web.py     [line:1495] INFO     Add module: portal.urls
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/auth)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/help/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/hello/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/login/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/noauth)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/ping/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal/)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,GET,path=/portal)
+2015-04-24 22:37:09 web.py     [line:1514] INFO     Add route: Route(static,POST,path=/redirect/)
+2015-04-24 22:37:09 db.py      [line:175] DEBUG    Init mysql engine <0x102e68210> ok.
+2015-04-24 22:37:09 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:37:09 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='user', ARGS: ()
+2015-04-24 22:37:09 db.py      [line:98 ] DEBUG    open connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:112] DEBUG    close connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:37:09 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='apadv', ARGS: ()
+2015-04-24 22:37:09 db.py      [line:98 ] DEBUG    open connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:112] DEBUG    close connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:37:09 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='gwinfo', ARGS: ()
+2015-04-24 22:37:09 db.py      [line:98 ] DEBUG    open connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:112] DEBUG    close connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:129] DEBUG    open lazy connection...
+2015-04-24 22:37:09 db.py      [line:350] DEBUG    SQL: select count(table_name) from INFORMATION_SCHEMA.tables where TABLE_SCHEMA='portal' and table_name='token', ARGS: ()
+2015-04-24 22:37:09 db.py      [line:98 ] DEBUG    open connection <0x102f3ab90>...
+2015-04-24 22:37:09 db.py      [line:112] DEBUG    close connection <0x102f3ab90>...
+2015-04-24 22:37:09 web.py     [line:1524] INFO     application (/Users/wuyadong/src/ha/portal) will start at 0.0.0.0:8899...
